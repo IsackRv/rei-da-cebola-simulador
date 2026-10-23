@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rei da Cebola</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+<header class="cabecalho-loja">
+  <img src="assets/Logo.jpg.jpg"
+       alt="Logo Rei da Cebola"
+       class="logo-loja">
+
+  <p>Qualidade e economia para sua família!</p>
+
+  <input
+    type="search"
+    id="pesquisa"
+    placeholder="Pesquisar produtos..."
+    oninput="pesquisarProdutos()">
+</header>
+
+
+<nav class="menu-loja">
+  <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
+    🏠
+    <span>Início</span>
+  </a>
+
+  
+<a href="#" onclick="abrirCarrinho(); return false;">
+    🛒
+    <span>Carrinho</span>
+</a>
+
+  
+<a href="#" onclick="finalizarCompra(); return false;">
+
+    ✅
+    <span>Finalizar</span>
+  </a>
+
+  
+<a href="#" onclick="abrirUltimoComprovante(); return false;">
+    🧾
+    <span>Comprovante</span>
+</a>
+
+</nav>
+
+
+
+<h2>Nossos Produtos</h2>
+<div class="produtos">
+
+  <div class="produto">
+    <img src="assets/TOMATE.jpg" alt="Tomate">
+    <h3>Tomate</h3>
+    <p>Tomate fresco - R$ 4,99/kg</p>
+    
+<button onclick="adicionarCarrinho('Tomate', 4.99)">
+  🛒 Adicionar ao carrinho
+</button>
+
+</div>
+
+  <div class="produto">
+    <img src="assets/CEBOLA.jpg" alt="Cebola">
+    <h3>Cebola</h3>
+    <p>Cebola selecionada - R$ 5,49/kg</p>
+    
+<button onclick="adicionarCarrinho('Cebola', 5.49)">
+    🛒 Adicionar ao carrinho
+</button>
+
+  </div>
+
+  <div class="produto">
+    <img src="assets/LARANJA.jpg" alt="Laranja">
+    <h3>Laranja</h3>
+    <p>Laranja fresquinha - R$ 4,99/kg</p>
+    
+<button onclick="adicionarCarrinho('Laranja', 4.99)">
+    🛒 Adicionar ao carrinho
+</button>
+
+  </div>
+
+</div>
+
+
+<section class="carrinho" id="carrinho">
+
+  <h2>🛒 Meu Carrinho</h2>
+
+  <div id="lista-carrinho">
+    <p>Seu carrinho está vazio.</p>
+  </div>
+
+  <h3 id="total-carrinho">
+    Total: R$ 0,00
+  </h3>
+
+  <button onclick="finalizarCompra()">
+    Finalizar compra
+  </button>
+</section>
+
+<p>Clique no botão para escolher os produtos.</p>
+<button onclick="simularCompra()">Simular compra</button>
+
+<footer>
+    <p>Desenvolvido por Isack Damacena Sousa</p>
+</footer>
+ 
+<script src="script.js"></script>
+
+</body>
+</html>

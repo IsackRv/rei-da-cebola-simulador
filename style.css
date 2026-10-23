@@ -1,0 +1,260 @@
+
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: #f0f8f2;
+    color: #24352a;
+    text-align: center;
+}
+
+/* Nome da loja */
+h1 {
+    background: #167a3e;
+    color: white;
+    padding: 35px 20px;
+    margin: -40px -20px 25px;
+    font-size: 38px;
+}
+
+/* Título dos produtos */
+h2 {
+    color: #167a3e;
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+/* Cartões dos produtos */
+h3 {
+    background: white;
+    color: #167a3e;
+    padding: 22px;
+    margin: 25px auto 0;
+    max-width: 550px;
+    border-radius: 15px 15px 0 0;
+    border: 1px solid #d5e8d9;
+    font-size: 23px;
+}
+
+h3 + p {
+    background: white;
+    margin: 0 auto 20px;
+    padding: 0 20px 25px;
+    max-width: 550px;
+    border-radius: 0 0 15px 15px;
+    border: 1px solid #d5e8d9;
+    border-top: none;
+    color: #237d43;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Botão de compra */
+button {
+    background: #16803f;
+    color: white;
+    border: none;
+    padding: 17px 40px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0c5428;
+    transform: scale(1.04);
+}
+
+/* Rodapé */
+footer {
+    background: #167a3e;
+    color: white;
+    padding: 22px;
+    margin: 45px -20px -40px;
+    font-size: 14px;
+}
+img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 20px auto 0;
+}
+
+h3 {
+    background-color: white;
+    color: #176b39;
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 600px;
+    border-radius: 15px 15px 0 0;
+}
+
+h3 + p {
+    background-color: white;
+    color: #176b39;
+    margin: 0 auto 25px;
+    padding: 15px;
+    max-width: 600px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 5px 15px #00000015;
+}.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px 15px;
+}
+
+.produto {
+    background: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #00000018;
+    text-align: center;
+}
+
+.produto img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin: 0 auto 15px;
+}
+
+.produto h3,
+.produto h3 + p {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 8px;
+    color: #176b39;
+}
+
+
+/* Cabeçalho Rei da Cebola */
+
+.cabecalho-loja {
+  background: #16803c;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.logo-loja {
+  width: 150px;
+  max-width: 70%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.cabecalho-loja input {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  margin: 15px auto 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .cabecalho-loja {
+    padding: 15px;
+  }
+
+  .logo-loja {
+    width: 120px;
+  }
+}
+
+
+
+/* MENU REI DA CEBOLA */
+.menu-loja {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  padding: 12px 8px;
+  box-shadow: 0 0 12px #0002;
+  border-radius: 12px;
+  margin: 15px auto;
+  max-width: 900px;
+  z-index: 1000;
+}
+
+.menu-loja a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #176b42;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+}
+
+.menu-loja a:hover {
+  color: #e6a500;
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+  .menu-loja {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 16px 16px 0 0;
+    box-sizing: border-box;
+    padding: 12px 4px;
+  }
+
+  .menu-loja a {
+    font-size: 12px;
+  }
+
+  body {
+    padding-bottom: 90px;
+  }
+}
+
+
+
+.menu-loja {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  z-index: 9999;
+}
+
+body {
+  padding-bottom: 100px;
+}
+
+
+
+/* Esconder o carrinho inicialmente */
+#carrinho {
+    display: none;
+}
